@@ -154,3 +154,5 @@ export TERM="xterm-256color"
 
 # color Scala REPL
 export JAVA_OPTS=-Dscala.color
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/activator-1.3.2
