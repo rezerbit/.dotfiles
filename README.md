@@ -17,6 +17,11 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 * Create or add ssh key
 
 ### Zsh
+Install zsh
+```
+sudo apt-get install zsh
+```
+
 Install oh-my-zsh
 ```
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -29,7 +34,7 @@ cp ~/.doftiles/zsh/zsh_themes/tuts01.zsh-theme ~/.oh-my-zsh/themes/
 * for linux
 
 ```
-ln -s ~/.doftiles/zsh/.zshrc ~/.zshrc
+ln -s ~/.doftiles/.zshrc ~/.zshrc
 ln -s ~/.doftiles/.zlogin ~/.zlogin
 ln -s ~/.doftiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
 
@@ -39,7 +44,7 @@ cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 Great theme by tuts+:
 http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
 
-
+* Restart
 ### Fonts
 
 ```
