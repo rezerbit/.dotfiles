@@ -21,6 +21,8 @@ Install zsh
 ```
 sudo apt-get install zsh
 ```
+sudo usermod rezerbit -s /usr/bin/zsh
+
 * Restart system
 
 * Install oh-my-zsh
