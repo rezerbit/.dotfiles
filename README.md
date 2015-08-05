@@ -60,9 +60,14 @@ http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-240
 
 
 ### RubyMine
+* Download RubyMine, unzip and move to /opt/rubymine
 
 ```
 ln -s ~/.dotfiles/.rubymine.desktop ~/.local/share/applications
+```
+* instal Java
+```
+http://www.linuxrussia.com/2013/04/oracle-java-7-ubuntu-1304-1204-1210.html
 ```
 
 * Import settings from ruby_mine_settings.jar
