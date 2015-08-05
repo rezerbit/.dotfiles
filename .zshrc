@@ -151,7 +151,7 @@ export JAVA_OPTS=-Dscala.color
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/activator-1.3.2
 
-export PATH_TO_RUBYMINE_BIN_DIR='/opt/rubymine/bin'
+PATH_TO_RUBYMINE_BIN_DIR='/opt/rubymine/bin'
 
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
