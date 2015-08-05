@@ -30,16 +30,15 @@ cp ~/.doftiles/zsh/zsh_themes/tuts01.zsh-theme ~/.oh-my-zsh/themes/
 
 ```
 ln -s ~/.doftiles/zsh/.zshrc ~/.zshrc
+ln -s ~/.doftiles/.zlogin ~/.zlogin
+ln -s ~/.doftiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+
 cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 ```
 
 Great theme by tuts+:
 http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
 
-```
-ln -s ~/.doftiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
-ln -s ~/.doftiles/.zlogin ~/.zlogin
-```
 
 ### Fonts
 
