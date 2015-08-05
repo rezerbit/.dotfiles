@@ -21,6 +21,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 ln -s ~/.doftiles/.fonts ~/.fonts
 ```
+* Change terminal font (with "Powerline" postfix)
 
 ### Terminal
 

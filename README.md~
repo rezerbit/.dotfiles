@@ -16,6 +16,17 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 * Create or add ssh key
 
+### Fonts
+
+```
+ln -s ~/.doftiles/.fonts ~/.fonts
+```
+* Change terminal font (with "Powerline" postfix)
+
+### Terminal
+
+https://github.com/Anthony25/gnome-terminal-colors-solarized
+
 ### Zsh
 * Install zsh
 ```
@@ -46,16 +57,6 @@ cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 
 Great theme by tuts+:
 http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
-
-### Fonts
-
-```
-ln -s ~/.doftiles/.fonts ~/.fonts
-```
-
-### Terminal
-
-https://github.com/Anthony25/gnome-terminal-colors-solarized
 
 
 ### RubyMine
