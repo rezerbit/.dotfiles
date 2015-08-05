@@ -71,7 +71,10 @@ http://www.linuxrussia.com/2013/04/oracle-java-7-ubuntu-1304-1204-1210.html
 ```
 
 * Import settings from ruby_mine_settings.jar
-
+* Create application launcher
+```
+Tools -> Create Desktop Entry
+```
 ### Tmux
 
 TODO
