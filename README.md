@@ -7,12 +7,12 @@ My settings
 ```
 sudo apt-get install git
 cd ~
-git clone https://github.com/rezerbit/dotfiles.git ~/.dotfiles
+git clone https://github.com/rezerbit/.dotfiles.git ~/.dotfiles
 ```
 
 ### Git
 ```
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 * Create or add ssh key
 
@@ -29,7 +29,7 @@ cp ~/.doftiles/zsh/zsh_themes/tuts01.zsh-theme ~/.oh-my-zsh/themes/
 * for linux
 
 ```
-ln -s ~/.doftiles/zsh/zshrc ~/.zshrc
+ln -s ~/.doftiles/zsh/.zshrc ~/.zshrc
 cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 ```
 
@@ -74,6 +74,7 @@ export TMUX_POWERLINE_THEME_DEFAULT="mytheme"
 ### Vim
 TODO
 ```
+sudo apt-get install vim
 ln -s ~/.doftiles/vim .vim
 ln -s ~/.doftiles/vim/vimrc ~/.vimrc
 ```
