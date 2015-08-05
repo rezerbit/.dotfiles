@@ -17,11 +17,11 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 * Create or add ssh key
 
 ### Zsh
-Install zsh
+* Install zsh
 ```
 sudo apt-get install zsh
-```
 sudo usermod rezerbit -s /usr/bin/zsh
+```
 
 * Restart system
 
