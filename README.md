@@ -21,17 +21,18 @@ Install zsh
 ```
 sudo apt-get install zsh
 ```
+* Restart system
 
-Install oh-my-zsh
+* Install oh-my-zsh
 ```
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 ```
-* for mac
+** for mac
 ```
 ln -s ~/.doftiles/zsh/zshrc_mac ~/.zshrc
 cp ~/.doftiles/zsh/zsh_themes/tuts01.zsh-theme ~/.oh-my-zsh/themes/
 ```
-* for linux
+** for linux
 
 ```
 ln -s ~/.doftiles/.zshrc ~/.zshrc
@@ -44,7 +45,6 @@ cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 Great theme by tuts+:
 http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
 
-* Restart
 ### Fonts
 
 ```
