@@ -60,8 +60,12 @@ http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-240
 
 
 ### RubyMine
+* Create label
+```
+cp ~/.dotfiles/.rubymine.desktop ~/.local/share/applications
+```
 
-Import settings from ruby_mine_settings.jar
+* Import settings from ruby_mine_settings.jar
 
 ### Tmux
 

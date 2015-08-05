@@ -89,7 +89,7 @@ alias bi='bundle install'
 alias z='zeus'
 
 # hashs
-hash -d blz=~/projects/blizko
+hash -d blz=~/work/projects/blizko
 
 alias rs='RAILS_ENV=test rspec'
 alias cu='RAILS_ENV=test cucumber'
@@ -150,6 +150,8 @@ export TERM="xterm-256color"
 export JAVA_OPTS=-Dscala.color
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/activator-1.3.2
+
+export PATH_TO_RUBYMINE_BIN_DIR='/opt/rubymine/bin'
 
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
