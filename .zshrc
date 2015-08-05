@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="rezerbit"
-
+DEFAULT_USER="rezerbit"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -89,13 +89,7 @@ alias bi='bundle install'
 alias z='zeus'
 
 # hashs
-hash -d hr=~/projects/nauhr
-hash -d it=~/projects/innovatour
-hash -d nb=~/projects/naubonus
-hash -d blog=~/projects/blog
-hash -d libapp=~/projects/libapp
-hash -d mm=~/projects/marketing
-hash -d gh=~/projects/geohack
+hash -d blz=~/projects/blizko
 
 alias rs='RAILS_ENV=test rspec'
 alias cu='RAILS_ENV=test cucumber'
@@ -156,3 +150,7 @@ export TERM="xterm-256color"
 export JAVA_OPTS=-Dscala.color
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/activator-1.3.2
+
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_FREE_MIN=500000
+export RUBY_HEAP_MIN_SLOTS=40000
