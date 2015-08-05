@@ -1,5 +1,7 @@
 # Dotfiles 
 
+My settings
+
 ## Installation
 
 ```
@@ -80,3 +82,4 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 
 * install plugins: open vim and fire command `:BundleInstall`
+
