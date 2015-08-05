@@ -5,6 +5,7 @@ My settings
 ## Installation
 
 ```
+sudo apt-get install git
 cd ~
 git clone https://github.com/rezerbit/dotfiles.git ~/.dotfiles
 ```
@@ -13,6 +14,7 @@ git clone https://github.com/rezerbit/dotfiles.git ~/.dotfiles
 ```
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ```
+* Create or add ssh key
 
 ### Zsh
 Install oh-my-zsh
