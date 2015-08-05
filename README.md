@@ -1,14 +1,10 @@
-# Dotfiles
-
-This repo is a collection of my customizations for zsh, vim and git. 
+# Dotfiles 
 
 ## Installation
 
-* clone repo to `~/.dotfiles` holder:
-
 ```
 cd ~
-git clone https://github.com/arty88/dotfiles.git ~/.dotfiles
+git clone https://github.com/rezerbit/dotfiles.git ~/.dotfiles
 ```
 
 ### Git
@@ -27,13 +23,38 @@ ln -s ~/.doftiles/zsh/zshrc_mac ~/.zshrc
 cp ~/.doftiles/zsh/zsh_themes/tuts01.zsh-theme ~/.oh-my-zsh/themes/
 ```
 * for linux
+
 ```
-ln -s ~/.doftiles/zsh/zshrc_linux ~/.zshrc
-cp ~/.doftiles/zsh/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
+ln -s ~/.doftiles/zsh/zshrc ~/.zshrc
+cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 ```
+
+Great theme by tuts+:
+http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
+
+```
+ln -s ~/.doftiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+ln -s ~/.doftiles/.zlogin ~/.zlogin
+```
+
+### Fonts
+
+```
+ln -s ~/.doftiles/.fonts ~/.fonts
+```
+
+### Terminal
+
+https://github.com/Anthony25/gnome-terminal-colors-solarized
+
+
+### RubyMine
+
+Import settings from ruby_mine_settings.jar
 
 ### Tmux
 
+TODO
 ```
 git clone https://github.com/erikw/tmux-powerline
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
@@ -47,6 +68,7 @@ export TMUX_POWERLINE_THEME_DEFAULT="mytheme"
 ```
 
 ### Vim
+TODO
 ```
 ln -s ~/.doftiles/vim .vim
 ln -s ~/.doftiles/vim/vimrc ~/.vimrc
