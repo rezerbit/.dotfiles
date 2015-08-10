@@ -33,7 +33,7 @@ source $ZSH/oh-my-zsh.sh
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -115,6 +115,7 @@ alias g='git'
 ## Alias for Abak Press
 alias gpud='git pull upstream develop'
 alias gpum='git pull upstream master'
+alias bb='rake build RAILS_ENV=test'
 
 # alias for SVN
 alias ss='svn status'
