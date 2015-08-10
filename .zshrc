@@ -8,6 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="rezerbit"
 DEFAULT_USER="rezerbit"
 
+source $ZSH/oh-my-zsh.sh
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -48,29 +50,25 @@ DEFAULT_USER="rezerbit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump command-not-found)
 
-source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
 export PATH="/Users/rezerbit/.rvm/gems/ruby-2.1.1/bin:/Users/rezerbit/.rvm/gems/ruby-2.1.1@global/bin:/Users/rezerbit/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/rezerbit/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-###################################################
-# my settings
-###################################################
+export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Aliases
 alias ezsh='vim ~/.zshrc'
@@ -79,10 +77,6 @@ alias tmux='tmux attach || tmux new'
 alias server='ssh root@192.168.225.194'
 
 #Alias for Rails
-alias serv='ruby ./script/server'
-alias tserv='RAILS_ENV=test ruby ./script/server'
-alias cons='ruby ./script/console'
-alias r='rails'
 alias be='bundle exec'
 alias b='bundle'
 alias bi='bundle install'
@@ -103,6 +97,7 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias go='git checkout'
+alias gob='git checkout -b'
 alias gb='git branch'
 alias gd='git diff'
 alias gdt='git difftool -y -t Kaleidoscope'
@@ -117,12 +112,15 @@ alias get='git '
 alias gcm='git commit -m '
 alias g='git'
 
+## Alias for Abak Press
+alias gpud='git pull upstream develop'
+alias gpum='git pull upstream master'
+
 # alias for SVN
 alias ss='svn status'
 alias sd='svn diff'
 alias sc='svn commit'
 alias sa='svn add'
-alias su='svn update'
 
 # Деплой на сервер
 alias ddeploy='ssh root@192.168.225.194'
@@ -156,3 +154,8 @@ PATH_TO_RUBYMINE_BIN_DIR='/opt/rubymine/bin'
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_FREE_MIN=500000
 export RUBY_HEAP_MIN_SLOTS=40000
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export GIT_EDITOR=vim
+
