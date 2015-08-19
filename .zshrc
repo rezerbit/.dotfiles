@@ -48,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump command-not-found)
+plugins=(git github autojump command-not-found)
 
 
 
@@ -116,6 +116,7 @@ alias g='git'
 alias gpud='git pull upstream develop'
 alias gpum='git pull upstream master'
 alias bb='rake build RAILS_ENV=test'
+alias sds='searchd --config ~/work/projects/blizko/config/development.sphinx.conf'
 
 # alias for SVN
 alias ss='svn status'
