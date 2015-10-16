@@ -80,6 +80,7 @@ alias server='ssh root@192.168.225.194'
 alias be='bundle exec'
 alias b='bundle'
 alias bi='bundle install'
+alias bu='bundle update'
 alias z='zeus'
 
 # hashs
@@ -113,10 +114,19 @@ alias gcm='git commit -m '
 alias g='git'
 
 ## Alias for Abak Press
-alias gpud='git pull upstream develop'
+alias gpud='git pull upstream develop' 
+alias gprud='git pull --rebase upstream develop' 
 alias gpum='git pull upstream master'
 alias bb='rake build RAILS_ENV=test'
 alias sds='searchd --config ~/work/projects/blizko/config/development.sphinx.conf'
+alias rrs='rake resque:start'
+alias rts='rake ts:start'
+alias gsl='git stash list'
+alias gsd='git stash drop'
+alias gst='git stash'
+alias gss='git stash show'
+alias gsa='git stash apply'
+alias gsp='git stash pop'
 
 # alias for SVN
 alias ss='svn status'
@@ -161,3 +171,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export GIT_EDITOR=vim
 
+# Nim path
+export PATH=$PATH:$HOME/Nim/bin
+export PATH=$PATH:$HOME/.nimble/bin
