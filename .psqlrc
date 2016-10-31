@@ -1,0 +1,30 @@
+-- Don't display the "helpful" message on startup.
+\set QUIET 1
+
+\set PROMPT1 '\n%[%033[1;31;40m%] ➤ %[%033[32m%]psql:%[%033[36m%]//%n%[%033[34m%]@%[%033[36m%]%`hostname`:%>%[%033[33m%]/%/ %[%033[K%]%[%033[0m%]\n\n%[%033[1;33m%]%#%[%033[0m%] '
+-- PROMPT2 is printed when the prompt expects more input, like when you type
+-- SELECT * FROM<enter>. %R shows what type of input it expects.
+\set PROMPT2 '[more] %R > '
+
+-- Show how long each query takes to execute
+\timing
+
+-- Use best available output format
+\x auto
+
+-- Verbose error reports
+\set VERBOSITY verbose
+
+-- Use a separate history file per-database
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- If a command is run more than once in a row,
+-- only store it once in the history
+\set HISTCONTROL ignoredups
+\set COMP_KEYWORD_CASE upper
+
+-- By default, NULL displays as an empty space. Is it actually an empty
+-- string, or is it null? This makes that distinction visible
+\pset null '[NULL]'
+
+\unset QUIET
