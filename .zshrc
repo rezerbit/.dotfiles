@@ -75,6 +75,8 @@ alias ezsh='vim ~/.zshrc'
 alias szsh='source ~/.zshrc'
 alias tmux='tmux attach || tmux new'
 alias server='ssh root@192.168.225.194'
+alias ll="ls -al"
+alias clr="clear"
 
 #Alias for Rails
 alias be='bundle exec'
@@ -93,10 +95,10 @@ alias dump-hr='mysqldump -u root -p nauhr_development > ~/dump/nauhr_development
 # alias for Git
 alias ga='git add'
 alias gaa='git add .'
-alias gs='git status'
+alias gs='git status --short'
 alias gc='git commit'
 alias gp='git push'
-alias gl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias gl='git log --graph --oneline --decorate --all'
 alias go='git checkout'
 alias gob='git checkout -b'
 alias gb='git branch'
