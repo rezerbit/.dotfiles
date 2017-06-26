@@ -85,20 +85,6 @@ http://www.linuxrussia.com/2013/04/oracle-java-7-ubuntu-1304-1204-1210.html
 ```
 Tools -> Create Desktop Entry
 ```
-## Tmux
-
-TODO
-```
-git clone https://github.com/erikw/tmux-powerline
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
-cp ~/.dotfiles/tmux/mytheme.sh ~/.dotfiles/tmux/tmux-powerline/themes/ 
-```
-Update `~/.dotfiles/tmux/tmux-powerline/config/defaults.sh` by
-```
-export TMUX_POWERLINE_DEBUG_MODE_ENABLED_DEFAULT="false"
-export TMUX_POWERLINE_PATCHED_FONT_IN_USE_DEFAULT="false"
-export TMUX_POWERLINE_THEME_DEFAULT="mytheme"
-```
 
 ## Vim
 TODO
@@ -114,4 +100,17 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 
 * install plugins: open vim and fire command `:BundleInstall`
+## Tmux
 
+TODO
+```
+git clone https://github.com/erikw/tmux-powerline
+ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+cp ~/.dotfiles/tmux/mytheme.sh ~/.dotfiles/tmux/tmux-powerline/themes/ 
+```
+Update `~/.dotfiles/tmux/tmux-powerline/config/defaults.sh` by
+```
+export TMUX_POWERLINE_DEBUG_MODE_ENABLED_DEFAULT="false"
+export TMUX_POWERLINE_PATCHED_FONT_IN_USE_DEFAULT="false"
+export TMUX_POWERLINE_THEME_DEFAULT="mytheme"
+```
