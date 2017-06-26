@@ -115,6 +115,11 @@ alias z='zeus'
 
 # hashs
 hash -d blz=~/work/blizko
+alias at='cd ~/work/autotests'
+alias asb='cd ~/work/autotests/selenium_blizko'
+alias asp='cd ~/work/autotests/selenium_pulscen'
+alias asi='cd ~/work/autotests/apress-selenium_integration'
+alias asr='cd ~/work/autotests/apress-selenium_reviews'
 
 alias rs='RAILS_ENV=test rspec'
 alias cu='RAILS_ENV=test cucumber'
@@ -209,3 +214,10 @@ export PATH=$PATH:$HOME/.nimble/bin
 
 #setxkbmap -layout us -option ctrl:nocaps # AHTUNG!
 export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+export GEM_HOME=$HOME/.gem
+PATH=$PATH:$HOME/.gem/bin
+PATH=$PATH:$HOME/.gem/ruby/2.3.4/bin
+PATH=$PATH:$HOME/.gem/ruby/2.4.1/bin
+
+setopt autocd
