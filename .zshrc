@@ -1,3 +1,9 @@
+if [ -d $HOME/.rbenv ]; then 
+  export PATH="$HOME/.rbenv/bin:$PATH" 
+  eval "$(rbenv init -)" 
+fi
+
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -19,7 +25,7 @@ POWERLEVEL9K_VCS_GIT_ICON='\ue60a'
 
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
-#POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
+POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv rvm time background_jobs ram virtualenv battery)
@@ -193,10 +199,6 @@ export PATH=$PATH:~/activator-1.3.2
 
 PATH_TO_RUBYMINE_BIN_DIR='/opt/rubymine/bin'
 
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_FREE_MIN=500000
-export RUBY_HEAP_MIN_SLOTS=40000
-
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export GIT_EDITOR=vim
@@ -205,4 +207,5 @@ export GIT_EDITOR=vim
 export PATH=$PATH:$HOME/Nim/bin
 export PATH=$PATH:$HOME/.nimble/bin
 
-setxkbmap -layout us -option ctrl:nocaps
+#setxkbmap -layout us -option ctrl:nocaps # AHTUNG!
+export PATH=$HOME/.rbenv/bin:$PATH

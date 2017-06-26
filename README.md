@@ -17,7 +17,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 sudo apt-get install zsh
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.doftiles/.zlogin ~/.zlogin
+ln -s ~/.dotfiles/.zlogin ~/.zlogin
 sudo usermod rezerbit -s /usr/bin/zsh
 ```
 
