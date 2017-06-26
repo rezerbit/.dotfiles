@@ -90,8 +90,8 @@ Tools -> Create Desktop Entry
 TODO
 ```
 sudo apt-get install vim
-ln -s ~/.doftiles/vim .vim
-ln -s ~/.doftiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vim .vim
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ```
 * install Vundle
 
