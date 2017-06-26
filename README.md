@@ -2,64 +2,75 @@
 
 My settings
 
-## Installation
+## Git
 
 ```
 sudo apt-get install git
 cd ~
 git clone https://github.com/rezerbit/.dotfiles.git ~/.dotfiles
-```
-
-### Git
-```
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
-* Create or add ssh key
+## Create or add ssh key
 
-### Fonts
-
-```
-ln -s ~/.doftiles/.fonts ~/.fonts
-```
-* Change terminal font (with "Powerline" postfix)
-
-### Terminal
-
-https://github.com/Anthony25/gnome-terminal-colors-solarized
-
-### Zsh
-* Install zsh
+## Zsh
+### Install zsh
 ```
 sudo apt-get install zsh
 sudo usermod rezerbit -s /usr/bin/zsh
 ```
 
-* Install oh-my-zsh
+### Install oh-my-zsh
 ```
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-```
-** for mac
-```
-ln -s ~/.doftiles/zsh/zshrc_mac ~/.zshrc
-cp ~/.doftiles/zsh/zsh_themes/tuts01.zsh-theme ~/.oh-my-zsh/themes/
-```
-** for linux
 
-```
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.doftiles/.zlogin ~/.zlogin
-ln -s ~/.dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
-
-cp ~/.doftiles/zsh_themes/tuts02.zsh-theme ~/.oh-my-zsh/themes/
 ```
 
-* Restart system
+## Setting zsh them
 
-Great theme by tuts+:
-http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
+### Step 1: Install Powerlevel9k
+There are several ways to install and use the Powerlevel9k theme: vanilla ZSH, Oh-My-Zsh, Prezto, Antigen, Zgen, Antibody, ZPM and ZIM. Some Distributions like Arch Linux also provides a package. Do **one** of the following, depending on how you use ZSH.
+
+#### Arch Linux
+
+```
+pacman -Syu zsh-theme-powerlevel9k
+```
+
+#### Option 1: Install for Vanilla ZSH
+
+If you just use a vanilla ZSH install, simply clone this repository and reference it in your `~/.zshrc`:
+
+```
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.powerlevel9k
+echo 'source  ~/.powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
+```
+
+#### Option 2: Install for Oh-My-ZSH
+
+To install this theme for use in Oh-My-Zsh, clone this repository into your OMZ `custom/themes` directory.
+
+```
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+
+You then need to select this theme in your `~/.zshrc`:
+
+```
+ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+### Step 2: Install a Powerline Fonts
+
+You can find the [installation instructions for Powerline Fonts here](https://powerline.readthedocs.io/en/latest/installation/linux.html#fonts-installation). You can also find the raw font files [in this Github repository](https://github.com/powerline/fonts) if you want to manually install them for your OS.
+
+After you have installed Powerline fonts, make the default font in your terminal emulator the Powerline font you want to use.
+
+### Step 3: Set terminal thems
 
 
-### RubyMine
+## RubyMine
 * Download RubyMine, unzip and move to /opt/rubymine
 
 ```
@@ -75,7 +86,7 @@ http://www.linuxrussia.com/2013/04/oracle-java-7-ubuntu-1304-1204-1210.html
 ```
 Tools -> Create Desktop Entry
 ```
-### Tmux
+## Tmux
 
 TODO
 ```
@@ -90,7 +101,7 @@ export TMUX_POWERLINE_PATCHED_FONT_IN_USE_DEFAULT="false"
 export TMUX_POWERLINE_THEME_DEFAULT="mytheme"
 ```
 
-### Vim
+## Vim
 TODO
 ```
 sudo apt-get install vim
