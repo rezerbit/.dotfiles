@@ -66,7 +66,8 @@ You can find the [installation instructions for Powerline Fonts here](https://po
 
 After you have installed Powerline fonts, make the default font in your terminal emulator the Powerline font you want to use.
 
-### Step 3: Set terminal thems
+### Step 3: Set terminal theme
+### Step 4: Install [awesome-terminal-fonts](https://github.com/gabrielelana/awesome-terminal-fonts)
 
 
 ## RubyMine
