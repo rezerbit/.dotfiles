@@ -1,8 +1,10 @@
+--------------
 if [ -d $HOME/.rbenv ]; then 
   export PATH="$HOME/.rbenv/bin:$PATH" 
   eval "$(rbenv init -)" 
 fi
 
+export TERM="xterm-256color"
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -20,7 +22,7 @@ POWERLEVEL9K_BATTERY_LOW_THRESHOLD='10'
 POWERLEVEL9K_BATTERY_LOW_COLOR='red'
 
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
-POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX='\uf0da'
+# POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX='\uf0da'
 POWERLEVEL9K_VCS_GIT_ICON='\ue60a'
 
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
@@ -28,14 +30,13 @@ POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(rbenv rvm time background_jobs ram virtualenv battery)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(rbenv rvm time background_jobs virtualenv battery)
 
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 
 DEFAULT_USER="rezerbit"
-
 source $ZSH/oh-my-zsh.sh
 
 # Example aliases
@@ -120,6 +121,7 @@ alias asb='cd ~/work/autotests/selenium_blizko'
 alias asp='cd ~/work/autotests/selenium_pulscen'
 alias asi='cd ~/work/autotests/apress-selenium_integration'
 alias asr='cd ~/work/autotests/apress-selenium_reviews'
+alias kn='cd ~/work/knife'
 
 alias rs='RAILS_ENV=test rspec'
 alias cu='RAILS_ENV=test cucumber'
@@ -190,12 +192,7 @@ export PATH=$IDEA_HOME/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session
 
-alias navicat='/opt/navicat/start_navicat'
-alias rubymine='/opt/RubyMine-7.0.2/bin/rubymine.sh'
-
 force_color_prompt=yes
-
-export TERM="xterm-256color"
 
 # color Scala REPL
 export JAVA_OPTS=-Dscala.color
@@ -212,12 +209,22 @@ export GIT_EDITOR=vim
 export PATH=$PATH:$HOME/Nim/bin
 export PATH=$PATH:$HOME/.nimble/bin
 
-#setxkbmap -layout us -option ctrl:nocaps # AHTUNG!
-export PATH=$HOME/.rbenv/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export GEM_HOME=$HOME/.gem
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
 PATH=$PATH:$HOME/.gem/bin
 PATH=$PATH:$HOME/.gem/ruby/2.3.4/bin
 PATH=$PATH:$HOME/.gem/ruby/2.4.1/bin
 
 setopt autocd
+
+# docker
+#export DOCKER_TLS_VERIFY="0"
+unset DOCKER_TLS_VERIFY
+unset DOCKER_CERT_PATH
+# export DOCKER_HOST="tcp://192.168.64.8:2376"
+export DOCKER_URL="tcp://192.168.64.8:2376"
+#export DOCKER_CERT_PATH="/Users/rezerbit/.docker/machine/machines/work"
+export DOCKER_MACHINE_NAME="work"
+eval "$(docker-machine env work)"

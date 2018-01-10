@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/vim-easy-align'
-
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
@@ -16,6 +15,19 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " ----------------------------------------------------------------------------------------------
+" set vim-airline theme
+" let g:airline_theme='solarized'
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
+
+let g:airline_linecolumn_prefix = '¶ '
+let g:airline_fugitive_prefix = '⎇ '
+let g:airline_paste_symbol = 'ρ'
+
+" ---------------------------------------------------------------------------------------------
+" NERDTree settings
+map <silent> <C-n> :NERDTreeFocus<CR>
 
 " Кодировка терминала, должна совпадать с той, которая используется для вывода в терминал
 set termencoding=utf-8
