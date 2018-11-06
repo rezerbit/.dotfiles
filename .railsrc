@@ -1,0 +1,10 @@
+--database=postgresql
+--webpack
+--skip-action-cable
+--skip-action-mailer
+--skip-coffee
+--skip-sprockets
+--skip-keeps
+--skip-test
+--skip-bundle
+
