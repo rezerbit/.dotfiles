@@ -73,7 +73,6 @@ After you have installed Powerline fonts, make the default font in your terminal
 ln -s ~/projects/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/projects/dotfiles/zshrc ~/.zshrc
 ln -s ~/projects/dotfiles/vimrc ~/.vimrc
-ln -s ~/projects/dotfiles/vscode/ ~/.vscode
 ln -s ~/projects/dotfiles/railsrc ~/.railsrc
 ln -s ~/projects/dotfiles/psqlrc ~/.psqlrc
 ln -s ~/projects/dotfiles/pryrc ~/.pryrc
