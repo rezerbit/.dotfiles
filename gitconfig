@@ -1,0 +1,15 @@
+[user]
+	email = rezerbit@gmail.com 
+	name = rezerbit 
+[includeIf "gitdir:~/projects/funbox/"]
+  path = ~/projects/funbox/.gitconfig
+[core]
+  autocrlf = input
+[push]
+  default = current
+[merge]
+  conflictstyle = diff3
+[rerere]
+  enabled = true  
+[rebase]
+  autosquash = true  

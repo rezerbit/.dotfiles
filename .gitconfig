@@ -1,9 +1,0 @@
-[user]
-	email = rezerbit@gmail.com
-	name = rezerbit
-[push]
-	default = matching
-[diff]
-	tool = meld
-[merge]
-	tool = meld

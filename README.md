@@ -69,48 +69,12 @@ After you have installed Powerline fonts, make the default font in your terminal
 ### Step 3: Set terminal theme
 ### Step 4: Install [awesome-terminal-fonts](https://github.com/gabrielelana/awesome-terminal-fonts)
 
-
-## RubyMine
-* Download RubyMine, unzip and move to /opt/rubymine
-
 ```
-ln -s ~/.dotfiles/.rubymine.desktop ~/.local/share/applications
-```
-* instal Java
-```
-http://www.linuxrussia.com/2013/04/oracle-java-7-ubuntu-1304-1204-1210.html
-```
-
-* Import settings from ruby_mine_settings.jar
-* Create application launcher
-```
-Tools -> Create Desktop Entry
-```
-
-## Vim
-TODO
-```
-sudo apt-get install vim
-ln -s ~/.dotfiles/vimrc ~/.vimrc
-```
-* install Vundle
-
-```
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-```
-
-* install plugins: open vim and fire command `:BundleInstall`
-## Tmux
-
-TODO
-```
-git clone https://github.com/erikw/tmux-powerline
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
-cp ~/.dotfiles/tmux/mytheme.sh ~/.dotfiles/tmux/tmux-powerline/themes/ 
-```
-Update `~/.dotfiles/tmux/tmux-powerline/config/defaults.sh` by
-```
-export TMUX_POWERLINE_DEBUG_MODE_ENABLED_DEFAULT="false"
-export TMUX_POWERLINE_PATCHED_FONT_IN_USE_DEFAULT="false"
-export TMUX_POWERLINE_THEME_DEFAULT="mytheme"
+ln -s ~/projects/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/projects/dotfiles/zshrc ~/.zshrc
+ln -s ~/projects/dotfiles/vimrc ~/.vimrc
+ln -s ~/projects/dotfiles/vscode/ ~/.vscode
+ln -s ~/projects/dotfiles/railsrc ~/.railsrc
+ln -s ~/projects/dotfiles/psqlrc ~/.psqlrc
+ln -s ~/projects/dotfiles/pryrc ~/.pryrc
 ```
